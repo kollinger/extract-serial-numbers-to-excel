@@ -1,6 +1,6 @@
 # Serial Number Extractor
 
-This project extracts serial numbers from images and exports them to an Excel file. It is designed to support HEIC image format by converting them to PNG before processing, making it ideal for creating inventory lists for objects with long serial numbers.
+This project uses Optical Character Recognition (OCR) techniques to extract serial numbers from images and exports them to an Excel file. The Tesseract.js OCR engine is utilized for the extraction process. The project supports HEIC image format by converting them to PNG using the heic-convert package before processing.
 
 ## Installation
 
@@ -16,7 +16,7 @@ This project extracts serial numbers from images and exports them to an Excel fi
 
 ## Why?
 
-If you need to create an inventory list for hundreds of objects with lengthy serial numbers, this script can help you expedite the process, saving time and reducing the risk of manual errors.
+Imagine you have to create an inventory list of hundreds of objects with lengthy serial numbers, this script can help you speed up this process by utilizing OCR technology to automatically extract and compile the serial numbers into an Excel file.
 
 ## Dependencies
 
