@@ -1,0 +1,22 @@
+{
+  "name": "extract-serial-numbers-to-excel",
+  "version": "1.0.0",
+  "description": "This project extracts serial numbers from images and exports them to an Excel file. It is designed to support HEIC image format by converting them to PNG before processing, making it ideal for creating inventory lists for objects with long serial numbers.",
+  "main": "extractSerialNumbersToExcel.js",
+  "scripts": {
+    "convertHeic": "node convertHeicToPng.js",
+    "createExcel": "node extractSerialNumbersToExcel.js"
+  },
+  "keywords": [],
+  "author": "Gerhard Kollinger <gerhard@kollinger.at>",
+  "license": "MIT",
+  "dependencies": {
+    "exceljs": "^4.3.0",
+    "fs": "^0.0.1-security",
+    "heic-convert": "^1.2.4",
+    "image-to-ascii": "^3.0.13",
+    "jimp": "^0.22.7",
+    "path": "^0.12.7",
+    "tesseract.js": "^4.0.2"
+  }
+}
